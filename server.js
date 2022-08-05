@@ -16,7 +16,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://megansilva:passwordBodhibaer2017@cluster0.2fxqqaq.mongodb.net/btrack?retryWrites=true&w=majority', { 
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://locallost:3001/b-track', { 
   useNewUrlParser: true,
   useFindAndModify: false
 });
